@@ -3,9 +3,9 @@
 <head>
 <title>BEST BUDDY</title>
 <script src="https://kit.fontawesome.com/2383a610f2.js" crossorigin="anonymous"></script>
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
 body {
   font-family: Arial;
   margin: 0;
@@ -148,72 +148,28 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-.done {
-  height: 125px;
-  text-align: center; 
-  border-radius: 100px; 
-  border: 2px solid orange;
-  padding: 16px 29px;
-  text-decoration: none;  
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  background-color: white; 
-  color: orange; 
-  border: 2px solid orange;
-  font-size: 30px;
-  margin: 18px 20px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
 
 .done:hover {
   background-color: orange;
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.done:hover {
-  background-color: orange;
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
 </style>
-  <Script>
-    let imagebox;
-    let imgdiv;
-    let dogselector;
-    window.onload = () => {
-      imgdiv = document.querySelector('.imgdiv');
-      imagebox = document.querySelector('.imagebox');
-      dogselector = document.querySelector('.dogselector');
-    }
-    function fetchimg(){
-      const breed = dogselector.value.toLowerCase();
-      console.log(">>>>>>>>>>>>>",breed);
-      const vari = `https://dog.ceo/api/breed/${breed}/images/random`;
-      fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
-      .then(res => res.json())
-      .then(res => {  
-        imagebox.src = res.message;
-        console.log("#############",res.message);
-      })
-      
-    }
-  </Script>
 </head>
-<body>
- 
-<div class="header">
-  <h3 class="title1">BEST BUDDY<br></h3>
+<body> 
+<div class="header"> 
+  <h3>BEST BUDDY<br></h3>
   <div class = "paw"><i style="font-size: 75px;" class="fas fa-paw onlypaw"></i></div> 
-  <p class="contentmsg">Let Us Help You To Choose Your Best Buddy</p>
-  
+  <p>We Hope That We Helped You To Choose<br>Your Next Best Buddy...!<br>Visit Us Again...!<br>::::BEST BUDDY::::</p> 
 </div> 
-<div class="footer">
-  <a href="select.html"><button class=" done" > Let's Go </button> </a>
-    <a href="Research Note 01.pdf"><button class="documentation" > Research and Refer Documents </button> </a>
-    <p  style="color:rgb(255, 255, 255);font-weight: bold;">Present By: Kumuduni P. Jayakody || Dog API</p> 
-    <p  style="color:rgb(255, 255, 255);font-weight: bold;">Eduonix || JavaScript Frameworks Mini E-Degree ||  Foundational JavaScript Project</p> 
+<div class="footer" > 
+  <a href="select.html" ><button class="button back"> Back </button> </a> 
+  <br><br> 
+  <a href="Research Note 01.pdf"><button class="documentation" > Research and Refer Documents </button> </a>
+  <p  style="color:rgb(255, 255, 255);font-weight: bold;text-align: center;">Present By: Kumuduni P. Jayakody || Dog API</p> 
+  <p  style="color:rgb(255, 255, 255);font-weight: bold;text-align: center;">Eduonix || JavaScript Frameworks Mini E-Degree ||  Foundational JavaScript Project</p> 
+ 
+
 </div> 
 </body>
 </html>

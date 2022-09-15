@@ -83,8 +83,7 @@ body {
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.header {   
-  padding: 60px;
+.header {    
   height : 665px; 
   text-align: center;
   background-image: url("img/big_dogs_header.jpg");
@@ -93,7 +92,7 @@ body {
   background-size: cover;
   position: relative;
   color:  orange;
-  font-size: 30px;
+  font-size: 20px;
 }
 .paw{
     animation: wiggle 2s linear infinite;
@@ -132,8 +131,7 @@ margin-right: 0.5rem;
 margin-bottom: 5px;
 margin-left: 0.5rem;
 padding: 0 .5rem;
-background-color: #fff;
--webkit-appearance: none;
+background-color: #fff; 
 vertical-align: middle;
 box-sizing: border-box;
 text-align: center;
@@ -206,13 +204,14 @@ font-weight: bolder;
 <body>
    
 <div class="header">
-  <h1>BEST BUDDY</h1>
+  <h3>BEST BUDDY</h3>
   Select a Breed<br>
   <div>
     <form onsubmit="fetchimg(); return false">
       <select class="dogselector" onchange ="fetchimg(); return false">
-        <option value="affenpinscher" selected >affenpinscher</option>
-        <option value="african" >african</option>
+        <option value="affenpinscher" selected >affenpinscher <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </option>
+        <option value="african" >african </option>
         <option value="airedale">airedale</option>
         <option value="akita">akita</option>
         <option value="appenzeller">appenzeller</option>
@@ -355,8 +354,9 @@ font-weight: bolder;
         <option value="weimaraner">weimaraner</option>
         <option value="whippet">whippet</option>
         <option value="wolfhound">irish wolfhound</option>
-      </select>
-      <button class="next" type="submit" >Load Next</button>
+      </select> 
+
+      <button class="next" type="submit" style="margin-left:10px ;">Load Next</button>
     </form>
     
   </div>
@@ -366,8 +366,8 @@ font-weight: bolder;
   </div>
 </div> 
 <div class="footer" >
-    <a href="home.html" ><button class="button back"> Back </button> </a> 
-    <a href="done.html" ><button class="done"> Done </button> </a> 
+    <a href="index.html" ><button class="button back"> Back </button> </a> 
+    <a href="final.html" ><button class="done"> Done </button> </a> 
     <br><br> 
     <a href="Research Note 01.pdf"><button class="documentation" > Research and Refer Documents </button> </a>
     <p  style="color:rgb(255, 255, 255);font-weight: bold;text-align: center;">Present By: Kumuduni P. Jayakody || Dog API</p> 
