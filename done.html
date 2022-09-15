@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BEST BUDDY</title>
+<script src="https://kit.fontawesome.com/2383a610f2.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+body {
+  font-family: Arial;
+  margin: 0;
+} 
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 100px;
+  color: orange; 
+  padding: 16px 32px;
+  height: 125px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-decoration: none; 
+  font-size: 30px;
+  margin: 18px 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index:4;
+}
+.proceedbutton {
+  background-color: white; 
+  color: orange; 
+  border: 2px solid orange;
+}
+
+.proceedbutton:hover {
+  background-color: orange;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.back {
+  background-color: white; 
+  color: orange; 
+  border: 2px solid orange;
+}
+
+.back:hover {
+  background-color: orange;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.header {   
+  padding: 60px;
+  height : 665px; 
+  text-align: center;
+  background-image: url("https://nspc.com.au/wp-content/uploads/2018/01/big_dogs_header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color:  orange;
+  font-size: 30px;
+}
+.paw{
+    animation: wiggle 2s linear infinite;
+}
+.onlypaw{
+    text-shadow: 1px 1px 2px rgb(196, 196, 196), 0 0 15px rgb(128, 128, 128), 0 0 5px rgb(105, 105, 105);
+}
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:170px;
+  background-color: orange;
+  color: white; 
+  text-align: center;
+} 
+.footerdog{
+  position: absolute;
+  bottom: 24px;
+  right: 995px;
+  font-size: 18px;
+  z-index:4;
+  width:200px;
+  
+}
+.documentation{ 
+    
+    background-color: yellow; 
+    border: 2px solid yellow; 
+    color: orange;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+   
+
+.documentation:hover {
+  background-color: orange;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+</head>
+<body> 
+<div class="header ">
+    <a href="select.html" ><button class="button back"> Back </button> </a> 
+  <h1>BEST BUDDY<br></h1>
+  <div class = "paw"><i style="font-size: 200px;" class="fas fa-paw onlypaw"></i></div> 
+  <p>We Hope That We Helped You To Choose<br>Your Next Best Buddy...!<br>Visit Us Again...!<br>::::BEST BUDDY::::</p> 
+</div> 
+<div class="footer">
+  <br><br> 
+  <a href="Research Note 01.pdf"><button class="documentation" > Research and Refer Documents </button> </a>
+    <p  style="color:rgb(255, 255, 255);font-weight: bold;">Present By: Kumuduni P. Jayakody || Dog API</p> 
+    <p  style="color:rgb(255, 255, 255);font-weight: bold;">Eduonix || JavaScript Frameworks Mini E-Degree ||  Foundational JavaScript Project</p> 
+</div> 
+</body>
+</html>
